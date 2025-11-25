@@ -1,0 +1,233 @@
+/* GLOBAL STYLE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #faf5ff;
+    color: #2b1b41;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #5e2b97;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Logo inside header */
+header .logo {
+    width: 120px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+/* Header title */
+header h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* ===========================
+        NAVIGATION BAR
+=========================== */
+nav {
+    background: #7b3eb9;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #d8c3ff;
+    color: #4c2b7b;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #7b3eb9;
+    min-width: 180px;
+    padding: 0;
+    margin: 0;
+    top: 40px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #d8c3ff;
+    color: #4c2b7b;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #4c2b7b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #5e2b97;
+    margin-top: 30px;
+    position: center;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+ul {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    list-style: square;
+    line-height: 1.8;
+    border: 1px solid #e8d9ff;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+
+/* ===========================
+        TABLE STYLE (if needed)
+=========================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    background: #5e2b97;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #e8d9ff;
+}
+
+table tr:nth-child(even) {
+    background: #f3eaff;
+}
+
+table tr:hover {
+    background: #e5d4ff;
+}
+
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e8d9ff;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
+    margin-top: 20px;
+}
+
+.contact-box p {
+    margin: 8px 0;
+}
+
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #5e2b97;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    header .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    header h2 {
+        font-size: 26px;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    ul {
+        padding: 15px;
+    }
+}
+
